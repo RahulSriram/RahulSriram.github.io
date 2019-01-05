@@ -454,6 +454,9 @@
 		text-decoration: none;
 		position: relative;
 		border-bottom: none;
+		margin: 0 auto;
+		display: flex;
+		align-content: center;
 	}
 
 		.icon:before {
@@ -506,22 +509,20 @@
 					padding-top: 0;
 				}
 
-		ul.icons {
+		.icons {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
 			margin-top: -0.675em;
+			text-align: center;
 		}
 
-			ul.icons li {
-				display: inline-block;
-				padding: 0.675em 0.5em;
-			}
-
-				ul.icons li a {
+				.icons a {
 					text-decoration: none;
+					margin-right: 3vw;
+					margin-top: 3vh;
 					position: relative;
-					display: block;
+					display: inline-block;
 					width: 3.75em;
 					height: 3.75em;
 					border-radius: 100%;
@@ -533,7 +534,7 @@
 					white-space: nowrap;
 				}
 
-					ul.icons li a:before {
+					.icons a:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
 						font-family: FontAwesome;
@@ -542,16 +543,16 @@
 						text-transform: none !important;
 					}
 
-					ul.icons li a:before {
+					.icons a:before {
 						color: #ffffff;
 						/*text-shadow: 1.25px 0px 0px #c8cccf, -1.25px 0px 0px #c8cccf, 0px 1.25px 0px #c8cccf, 0px -1.25px 0px #c8cccf;*/
 					}
 
-					ul.icons li a:hover:before {
+					.icons a:hover:before {
 						text-shadow: 1.25px 0px 0px #b000ff, -1.25px 0px 0px #b000ff, 0px 1.25px 0px #b000ff, 0px -1.25px 0px #b000ff;
 					}
 
-					ul.icons li a:before {
+					.icons a:before {
 						position: absolute;
 						top: 0;
 						left: 0;
@@ -563,13 +564,13 @@
 						text-indent: 0;
 					}
 
-					ul.icons li a:hover {
+					.icons a:hover {
 						border-color: #b000ff;
 					}
 
 			@media screen and (max-width: 480px) {
 
-				ul.icons li a:before {
+				.icons a:before {
 					font-size: 1.5rem;
 				}
 
